@@ -1,0 +1,9 @@
+{% if total_list%}
+    <ul>
+    {% for company in total_list %}
+        <li><a href="/interactor/{{ company.id }}/">{{company.name}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>The list is empty! Make an entry ye cur.</p>
+{% endif %}
